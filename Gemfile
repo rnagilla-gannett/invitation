@@ -40,6 +40,7 @@ gem 'therubyracer', :platforms => :ruby
 gem 'execjs'
 gem 'thin', group: :development
 gem 'localtunnel', group: :development
+gem 'rails_12factor'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
