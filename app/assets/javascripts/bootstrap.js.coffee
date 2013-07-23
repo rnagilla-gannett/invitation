@@ -14,9 +14,10 @@ jQuery ->
   $("#rs").animate({left: "-=100",top: "-100"}, 100000);
   setTimeout(fadeIn,3500);
 
-
-  # startAnim = () ->
-  # setTimeout(fadeIn,10);
+  10.times do
+  	startAnim = () ->
+  	setTimeout(fadeIn,10);
+  end
 
 jQuery ->
   $('div#lunaplane a').bind 'click',(e) ->
