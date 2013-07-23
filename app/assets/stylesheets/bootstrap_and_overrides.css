@@ -1,0 +1,120 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+
+.background-clouds{
+	background-color: #9FDDEA;
+	background-repeat:repeat-y repeat-x;
+	width: 100;
+	background-image: 
+		url('/assets/clouds.png');
+}
+
+.footer-hills{
+	background-color: #9FDDEA;
+	width: 100;
+	background-image: 
+		url('/assets/hill-with-windmill.png');
+}
+
+#lunaplane {
+  background-image:url("/assets/lunaplane.png");
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  height:358px;
+  position:absolute;
+  right:78px;
+  top:403px;
+  width:433px;
+}
+
+#rs {
+  background-image:url('/assets/karlandgina.png');
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  height:755px;
+  left:50px;
+  position:absolute;
+  top:20px;
+  width:487px;
+}
+
+#datelocation {
+  position:absolute;
+  right:50px;
+  top:276px;
+  z-index:1;
+}
+
+#btn-weekend {
+  background-image:url(http://karlandgina.com/images/btn-weekend.png);
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  cursor:pointer;
+  display:block;
+  height:43px;
+  left:72px;
+  position:absolute;
+  text-indent:-9999em;
+  top:43px;
+  width:93px;
+}
+
+#btn-travel {
+  background-image:url(http://karlandgina.com/images/btn-travel.png);
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  cursor:pointer;
+  display:block;
+  height:43px;
+  left:178px;
+  position:absolute;
+  text-indent:-9999em;
+  top:43px;
+  width:69px;
+}
+
+#btn-resort {
+  background-image:url(http://karlandgina.com/images/btn-resort.png);
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  cursor:pointer;
+  display:block;
+  height:43px;
+  left:259px;
+  position:absolute;
+  text-indent:-9999em;
+  top:43px;
+  width:66px;
+}
+
+#btn-registry {
+  background-image:url(http://karlandgina.com/images/btn-registry.png);
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  cursor:pointer;
+  display:block;
+  height:59px;
+  left:338px;
+  position:absolute;
+  text-indent:-9999em;
+  top:60px;
+  width:81px;
+}
+
+#btn-weekend:hover, #btn-travel:hover, #btn-resort:hover {
+  background-position:0 -43px;
+}
+#btn-registry:hover {
+  background-position:0 -59px;
+}
+
+#section1 {
+  height:2392px;
+  position:relative;
+  width:100%;
+}
