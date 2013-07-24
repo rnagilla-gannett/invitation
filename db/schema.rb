@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20130722183234) do
     t.integer  "adults"
     t.integer  "children"
     t.text     "comment"
+    t.boolean  "present"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

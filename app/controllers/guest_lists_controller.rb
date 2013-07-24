@@ -1,6 +1,6 @@
 class GuestListsController < ApplicationController
   before_action :set_guest_list, only: [:show, :edit, :update, :destroy]
-  layout :false , only: [:new]
+  layout 'pop_up_layout' , only: [:new, :thankyou]
 
   # GET /guest_lists
   # GET /guest_lists.json
@@ -26,16 +26,19 @@ class GuestListsController < ApplicationController
   # POST /guest_lists.json
   def create
     @guest_list = GuestList.new(guest_list_params)
-
+    message = @guest_list.present? ? 'Thank you for your RSVP, See ya soon!' : 'Thank you for your RSVP, We will miss you :('
     respond_to do |format|
       if @guest_list.save
-        format.html { redirect_to guest_lists_url, notice: 'Thank you for your RSVP, See ya soon !' }
+        format.html { redirect_to thankyou_url, notice: message }
         format.json { render action: 'show', status: :created, location: @guest_list }
       else
         format.html { render action: 'new' }
         format.json { render json: @guest_list.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def thankyou
   end
 
   # PATCH/PUT /guest_lists/1
@@ -70,6 +73,6 @@ class GuestListsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def guest_list_params
-      params.require(:guest_list).permit(:name, :email, :adults, :children)
+      params.require(:guest_list).permit(:name, :email, :adults, :children,:comment,:present)
     end
 end

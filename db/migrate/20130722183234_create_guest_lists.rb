@@ -6,6 +6,7 @@ class CreateGuestLists < ActiveRecord::Migration
       t.integer :adults
       t.integer :children
       t.text :comment
+      t.boolean :present
 
       t.timestamps
     end

@@ -35,3 +35,8 @@ jQuery ->
   						speed: 3500,
   						pause: 1000
   					});
+
+  $('#btn-rsvp').click ->
+    window.open('guest_lists/new','popup','scrollbars=1,resizable=1,width=700,height=440')
+  $('.rsvp_cancel').click ->
+    window.close()

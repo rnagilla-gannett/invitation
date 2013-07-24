@@ -40,6 +40,9 @@
         <div class="row-fluid">
 
           <div id="section1">
+
+            <%#= link_to "RSVP", {:controller => "guest_lists", :action => "new"}, :onclick => "javascript:window.open('guest_lists/new','popup','scrollbars=1,resizable=1,width=700,height=320');return false;"%>
+
             <div id="rs">
             </div>
 
@@ -55,7 +58,7 @@
             </div>
 
              <div id="datelocation" alt="August 25 2013, Northern Virgnia VA" />
-              <%= image_tag "date.png", class: "date_location"%>
+              <%= image_tag "date2.png", class: "date_location"%>
              </div>
           </div><!--Section 1 ends here-->
 
@@ -71,7 +74,7 @@
           </div><!--Section 2 ends here-->
 
           <div id="section3">
-            <div class="nav" id="nav2">
+            <div class="nav" id="nav3">
               <a class="up" id="up2" href="#section2"></a>
               <a class="down" id="down2" href="#section4"></a>
             </div><!--End nav-dl-->
@@ -81,7 +84,7 @@
           </div><!--Section 3 ends here-->
 
           <div id="section4">
-            <div class="nav" id="nav2">
+            <div class="nav" id="nav4">
               <a class="up" id="up2" href="#section3"></a>
               <a class="down" id="down2" href="#section5"></a>
             </div><!--End nav-dl-->
@@ -90,6 +93,9 @@
           </div><!--Section 3 ends here-->
 
           <div id="section5">
+            <div class="nav" id="nav5">
+              <a class="up" id="up2" href="#section1"></a>
+            </div><!--End nav-dl-->
             <div id="registry">              
             </div>
           </div><!--Section 3 ends here-->
