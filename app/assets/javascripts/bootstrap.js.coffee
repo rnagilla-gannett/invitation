@@ -7,25 +7,25 @@ jQuery ->
   $('.luna_plane_flying').sprite({fps: 10, no_of_frames: 3})
 
   fadeIn = () ->
-  $("#rs").animate({left: "+=100";top: "+=100"}, 100000);
-  setTimeout(fadeOut,3500);
+  $("#rs").animate({left: "+=100";top: "+=100"}, 100000)
 	
   fadeOut = () ->
-  $("#rs").animate({left: "-=100",top: "-100"}, 100000);
-  setTimeout(fadeIn,3500);
+  $("#rs").animate({left: "+10",top: "+10"}, 100000);
 
-  10.times do
-  	startAnim = () ->
-  	setTimeout(fadeIn,10);
-  end
+  fadeIn = () ->
+  $("#rs").animate({left: "+=100";top: "+=100"}, 100000)
+  
+  fadeOut = () ->
+  $("#rs").animate({left: "+10",top: "+10"}, 100000);
+
+  fadeIn = () ->
+  $("#rs").animate({left: "+=100";top: "+=100"}, 100000)
+  
+  fadeOut = () ->
+  $("#rs").animate({left: "+10",top: "+10"}, 100000);
+
 
 jQuery ->
-  $('div#lunaplane a').bind 'click',(e) ->
-    anchor = $(this)
-  	$('html, body').stop().animate({
-  	  scrollTop: $($anchor.attr('href')).offset().top
-  	  }, 1000);
-
   $('#rs').sprite({fps: 8, no_of_frames: 1})
   					.spRandom({
   						top: 20,
