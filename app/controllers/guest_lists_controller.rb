@@ -33,6 +33,7 @@ class GuestListsController < ApplicationController
 
     respond_to do |format|
       if @guest_list
+        RsvpMailer.rsvp_thankyou(@guest_list).deliver
         format.html { redirect_to thankyou_url, notice: message }
       else
         format.html { render action: 'new' }
