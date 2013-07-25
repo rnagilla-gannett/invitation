@@ -1,0 +1,7 @@
+<% @guest_lists.each do |guest|%>
+	<div class="row-fluid">
+	  <%= guest.comment%>
+	  <%= guest.name%>
+	  <%= guest.created_at%>
+	</div>
+<% end %>

@@ -38,5 +38,11 @@ jQuery ->
 
   $('#btn-rsvp').click ->
     window.open('guest_lists/new','popup','scrollbars=1,resizable=1,width=700,height=440')
-  $('.rsvp_cancel').click ->
-    window.close()
+  $('div#lunaplane a').bind 'click', (e) ->
+    $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 1000);
+    event.preventDefault();
+  $('div.nav a').bind 'click', (e) ->
+    $('html, body').stop().animate({scrollTop: $($(this).attr('href')).offset().top}, 2000);
+    event.preventDefault();
+  # $('.rsvp_cancel').click ->
+  #   window.close()

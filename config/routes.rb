@@ -1,6 +1,8 @@
 Invitation::Application.routes.draw do
   resources :guest_lists
   match '/thankyou' => 'guest_lists#thankyou', via: [:get, :post]
+  match '/sorry' => 'guest_lists#sorry', via: [:get, :post]
+  match '/wishes' => 'guest_lists#comments', via: [:get, :post]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

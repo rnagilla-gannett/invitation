@@ -1,4 +1,4 @@
-&nbsp;
+<p style='font-style:italic;font-weight:bold;'>Note: To edit your RSVP, Please use the same Email id.</p>
 <%= simple_form_for @guest_list, :html => { :class => 'form-inline' } do |f| %>
   <div class="row-fluid">
  	<div class="span2">
@@ -34,6 +34,6 @@
   	&nbsp;
   </div>
   <%= f.button :submit, "RSVP", :class => 'btn btn-success rsvp_success' %>
-  <%= link_to t('.cancel', :default => t("helpers.links.Sorry :(")),
-                guest_lists_path, :class => 'btn rsvp_cancel' %>
+  <%= link_to t('.cancel', :default => t("helpers.links.Cancel")),
+                sorry_path, :class => 'btn rsvp_cancel' %>
 <% end %>

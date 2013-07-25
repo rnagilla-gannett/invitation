@@ -1,6 +1,6 @@
 class GuestListsController < ApplicationController
   before_action :set_guest_list, only: [:show, :edit, :update, :destroy]
-  layout 'pop_up_layout' , only: [:new, :thankyou]
+  layout 'pop_up_layout' , only: [:new, :thankyou, :sorry, :comments]
 
   # GET /guest_lists
   # GET /guest_lists.json
@@ -25,12 +25,15 @@ class GuestListsController < ApplicationController
   # POST /guest_lists
   # POST /guest_lists.json
   def create
-    @guest_list = GuestList.new(guest_list_params)
+    guest_list = GuestList.find_by_email(guest_list_params[:email])
+    @guest_list = guest_list.nil? ? GuestList.new(guest_list_params) : guest_list
+    guest_list.nil? ? @guest_list.save : @guest_list.update_attributes(guest_list_params)
+    
     message = @guest_list.present? ? 'Thank you for your RSVP, See ya soon!' : 'Thank you for your RSVP, We will miss you :('
+
     respond_to do |format|
-      if @guest_list.save
+      if @guest_list
         format.html { redirect_to thankyou_url, notice: message }
-        format.json { render action: 'show', status: :created, location: @guest_list }
       else
         format.html { render action: 'new' }
         format.json { render json: @guest_list.errors, status: :unprocessable_entity }
@@ -40,6 +43,15 @@ class GuestListsController < ApplicationController
 
   def thankyou
   end
+
+  def sorry
+    flash[:notice] = "Sorry to see you go... Don't forget to comeback and atleast Leave a message for us !"
+  end
+
+  def comments
+    @guest_lists = GuestList.all.order(:updated_at)
+  end
+
 
   # PATCH/PUT /guest_lists/1
   # PATCH/PUT /guest_lists/1.json
