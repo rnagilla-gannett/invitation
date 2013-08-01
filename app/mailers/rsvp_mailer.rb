@@ -5,7 +5,7 @@ class RsvpMailer < ActionMailer::Base
   	@guest = guest
 
   	@message = @guest.present? ? "See you guys soon!" : "We will miss you guys at our wedding!"
-  	mail(to: ["nagillarakeshreddy@gmail.com",guest.email], subject: 'Thank you for you RSVP!')
+  	mail(to: guest.email, bcc: "nagillarakeshreddy@gmail.com", subject: 'Thank you for you RSVP!')
   end
 
 end

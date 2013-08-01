@@ -144,42 +144,21 @@
   width:100%;
 }
 #section5 {
-  height:1800px;
-  position:relative;
-  width:100%;
-}
-
-#weekend {
-  height:1804px;
-  position:relative;
-  width:100%;
-}
-#location {
-  height:1990px;
-  position:relative;
-  width:100%;
-}
-#travel {
-  height:1852px;
-  position:relative;
-  width:100%;
-}
-#registry {
-  height:840px;
+  height:700px;
   position:relative;
   width:100%;
 }
 
 #btn-rsvp {
-  background-image:url(http://karlandgina.com/images/btn-rsvp.png);
+  background-image:url('/assets/btn-rsvp.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   display:block;
   height:87px;
   position:absolute;
-  right:41px;
+  right:10px;
   text-indent:-9999em;
-  top:320px;
+  top:350px;
   width:148px;
 }
 
@@ -188,12 +167,12 @@
 }
 
 #joinus {
-  background-image:url('/assets/Weekend.jpg');
+  background-image:url('/assets/joinusweekend.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
-  height:450px;
+  height:500px;
   left:50px;
-  position:absolute;
+  position:relative;
   top:80px;
   width:810px;
 }
@@ -202,9 +181,8 @@
   background-image:url('/assets/Weekend.jpg');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
-  height:450px;
+  height:500px;
   left:50;
-  margin-left:-31px;
   position:absolute;
   top:80px;
   width:810px;
@@ -212,10 +190,10 @@
 
 
 #location {
-  background-image:url('/assets/Weekend.jpg');
+  background-image:url('/assets/venue.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
-  height:450;
+  height:450px;
   left:50px;
   position:absolute;
   top:80px;
@@ -223,10 +201,10 @@
 }
 
 #registry {
-  background-image:url('/assets/Weekend.jpg');
+  background-image:url('/assets/registry.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
-  height:450;
+  height:450px;
   left:50px;
   position:absolute;
   top:80px;
@@ -266,12 +244,21 @@
   margin-right:50px;
   position:absolute;
   right:0;
-  top:400px;
+  top:300px;
   z-index:10;
 }
 
+#comment_here_image{
+  margin-right:100px;
+  position:absolute;
+  right:0;
+  bottom:0px;
+  z-index:10;
+  font-weight: bold;
+}
+
 a.up {
-  background-image:url(http://karlandgina.com/images/up.png);
+  background-image:url('/assets/up.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;
@@ -283,7 +270,7 @@ a.up:hover, a.up:active {
   background-position:0 -36px;
 }
 a.down {
-  background-image:url(http://karlandgina.com/images/down.png);
+  background-image:url('/assets/down.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;
@@ -292,7 +279,7 @@ a.down {
   width:86px;
 }
 a.top {
-  background-image:url(http://karlandgina.com/images/top.png);
+  background-image:url('/assets/top.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;

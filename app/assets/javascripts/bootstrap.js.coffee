@@ -4,7 +4,8 @@ jQuery ->
   $("a[rel=tooltip]").tooltip()
 
   $('.background-clouds').pan({fps: 10, dir: 'right'});
-  $('.luna_plane_flying').sprite({fps: 10, no_of_frames: 3})
+  $('#lunaplane').sprite({fps: 10, no_of_frames: 3})
+  #$('#bird').pan({fps: 10, dir: 'left'});
 
   fadeIn = () ->
   $("#rs").animate({left: "+=100";top: "+=100"}, 100000)
