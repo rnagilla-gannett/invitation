@@ -45,8 +45,8 @@
   background-image:url('/assets/rakeshandsupriya.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
-  height:755px;
-  left:50px;
+  height:655px;
+  left:30px;
   position:absolute;
   top:20px;
   width:487px;
@@ -60,7 +60,7 @@
 }
 
 #btn-weekend {
-  background-image:url(http://karlandgina.com/images/btn-weekend.png);
+  background-image:url('/assets/btn-weekend.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;
@@ -74,7 +74,7 @@
 }
 
 #btn-travel {
-  background-image:url(http://karlandgina.com/images/btn-travel.png);
+  background-image:url("/assets/btn-travel.png");
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;
@@ -88,7 +88,7 @@
 }
 
 #btn-resort {
-  background-image:url(http://karlandgina.com/images/btn-resort.png);
+  background-image:url('/assets/btn-venue.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;
@@ -102,7 +102,7 @@
 }
 
 #btn-registry {
-  background-image:url(http://karlandgina.com/images/btn-registry.png);
+  background-image:url('/assets/btn-registry.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;
@@ -178,7 +178,7 @@
 }
 
 #travel {
-  background-image:url('/assets/Weekend.jpg');
+  background-image:url('/assets/travel-info.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
   height:500px;
@@ -190,7 +190,7 @@
 
 
 #location {
-  background-image:url('/assets/venue.png');
+  background-image:url('/assets/venue-info.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
   height:450px;
@@ -289,4 +289,20 @@ a.top {
 }
 a.down:hover, a.down:active, a.top:hover, a.top:active {
   background-position:0 -38px;
+}
+
+#btn-honeyfund {
+  background-image:url(http://karlandgina.com/images/btn-honeyfund.png);
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  display:block;
+  height:29px;
+  left:564px;
+  position:absolute;
+  text-indent:-9999em;
+  top:89px;
+  width:162px;
+}
+#btn-honeyfund:hover {
+  background-position:0 -29px;
 }
