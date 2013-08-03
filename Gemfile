@@ -44,7 +44,6 @@ gem 'unicorn'
 gem 'foreman'
 gem 'awesome_print', :group => [:development]
 gem 'letter_opener',group: :development
-gem 'will_paginate', '~> 3.0'
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 
 # Use ActiveModel has_secure_password
