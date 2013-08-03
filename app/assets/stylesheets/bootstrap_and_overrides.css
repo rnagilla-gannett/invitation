@@ -44,7 +44,7 @@
   background-image:url('/assets/rakeshandsupriya.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
-  height:655px;
+  height:755px;
   left:30px;
   position:absolute;
   top:20px;
@@ -88,16 +88,16 @@
 
 #btn-resort {
   /*background-image:url('/assets/venuebtngood.png');*/
-  background-image:url('/assets/btn-venue.png');
+  background-image:url('/assets/btn-venue3.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   cursor:pointer;
   display:block;
-  height:43px;
+  height:42px;
   left:259px;
   position:absolute;
   text-indent:-9999em;
-  top:39px;
+  top:45px;
   width:66px;
 }
 
@@ -120,7 +120,7 @@
 }
 
 #btn-resort:hover {
-  background-position:0 -35px; 
+  background-position:0 -42.5px; 
 }
 #btn-registry:hover {
   background-position:0 -59px;
@@ -303,7 +303,7 @@ a.down:hover, a.down:active, a.top:hover, a.top:active {
 }
 
 #btn-honeyfund {
-  background-image:url('/assets/travelersjoy-link2.png');
+  background-image:url('/assets/travelersjoy-link.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   display:block;
