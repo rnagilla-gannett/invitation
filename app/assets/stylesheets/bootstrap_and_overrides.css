@@ -170,8 +170,10 @@
   background-image:url('/assets/joinusweekend.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height:500px;
-  left:50px;
   position:relative;
   top:80px;
   width:810px;
@@ -181,9 +183,11 @@
   background-image:url('/assets/travel-info.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height:500px;
-  left:50;
-  position:absolute;
+  position:relative;
   top:80px;
   width:810px;
 }
@@ -193,9 +197,11 @@
   background-image:url('/assets/venue-info.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height:450px;
-  left:50px;
-  position:absolute;
+  position:relative;
   top:80px;
   width:810px;
 }
@@ -204,10 +210,11 @@
   background-image:url('/assets/registry.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
-  height:450px;
-  left:50px;
-  position:absolute;
-  top:80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height:300px;
+  position:relative;
   width:810px;
 }
 
@@ -217,7 +224,7 @@
 }
 
 #nav2 {
-  margin-right:50px;
+  margin-right:20px;
   position:absolute;
   right:0;
   top:400px;
@@ -225,7 +232,7 @@
 }
 
 #nav3 {
-  margin-right:50px;
+  margin-right:20px;
   position:absolute;
   right:0;
   top:400px;
@@ -233,7 +240,7 @@
 }
 
 #nav4 {
-  margin-right:50px;
+  margin-right:20px;
   position:absolute;
   right:0;
   top:400px;
@@ -241,7 +248,7 @@
 }
 
 #nav5 {
-  margin-right:50px;
+  margin-right:20px;
   position:absolute;
   right:0;
   top:300px;
@@ -292,12 +299,12 @@ a.down:hover, a.down:active, a.top:hover, a.top:active {
 }
 
 #btn-honeyfund {
-  background-image:url(http://karlandgina.com/images/btn-honeyfund.png);
+  background-image:url('/assets/travelersjoy-link.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   display:block;
   height:29px;
-  left:564px;
+  left:580px;
   position:absolute;
   text-indent:-9999em;
   top:89px;
@@ -305,4 +312,11 @@ a.down:hover, a.down:active, a.top:hover, a.top:active {
 }
 #btn-honeyfund:hover {
   background-position:0 -29px;
+}
+
+.comments-box{
+  
+  padding:10px;
+  border:5px;
+  margin:0px;
 }
