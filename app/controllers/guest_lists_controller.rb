@@ -50,7 +50,7 @@ class GuestListsController < ApplicationController
   end
 
   def comments
-    @guest_lists = GuestList.all.order(:updated_at)
+    @guest_lists = GuestList.order("updated_at DESC")
   end
 
 

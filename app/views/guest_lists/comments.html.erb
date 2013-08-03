@@ -1,16 +1,28 @@
 <h4 style='text-align:center;'>Wishes and Blessings.</h4>
-<% @guest_lists.each do |guest|%>
-	<%unless guest.comment.size.zero? %>
-		<div class='row-fluid comments-box'>
-			<div >
-				<div class="headline">
-					<%= guest.name%> wrote on <%= guest.created_at%>
-				</div>
-				<div class="comment_content">
-					<%= guest.comment%>
-				</div></div>
-				</br>
-			</div>
-		</div>
-	<% end %>
-<% end %>
+<table id="comments_list" class="table table-striped table-bordered table-condensed" class="row" style="font-size:10px">
+  <thead>
+    <tr>
+    	<th>
+				<% @guest_lists.each do |guest|%>
+					<%unless guest.comment.size.zero? %>
+						<div class='row-fluid comments-box'>
+							<div >
+								<div class="headline">
+									<%= guest.name%> wrote on <%= guest.created_at.to_date %>
+								</div>
+								<div class="comment_content">
+									<%= guest.comment%>
+								</div></div>
+								</br>
+							</div>
+						</div>
+					<% end %>
+				<% end %>    		
+    	</th>
+    	<th>
+    	</th>
+    </tr>
+  <thead>
+  <tbody>
+  </tbody>
+</table>

@@ -87,6 +87,7 @@
 }
 
 #btn-resort {
+  /*background-image:url('/assets/venuebtngood.png');*/
   background-image:url('/assets/btn-venue.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
@@ -302,7 +303,7 @@ a.down:hover, a.down:active, a.top:hover, a.top:active {
 }
 
 #btn-honeyfund {
-  background-image:url('/assets/travelersjoy-link.png');
+  background-image:url('/assets/travelersjoy-link2.png');
   background-position:0 0;
   background-repeat:no-repeat no-repeat;
   display:block;
@@ -318,7 +319,8 @@ a.down:hover, a.down:active, a.top:hover, a.top:active {
 }
 
 .comments-box{
-  
+  background-color: #9FDDEA;
+  overflow: scroll;
   padding:10px;
   border:5px;
   margin:0px;

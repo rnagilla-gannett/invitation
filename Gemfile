@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Use sqlite3 as the database for Active Record
- # gem 'sqlite3'
+#gem 'sqlite3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -44,6 +44,9 @@ gem 'unicorn'
 gem 'foreman'
 gem 'awesome_print', :group => [:development]
 gem 'letter_opener',group: :development
+gem 'will_paginate', '~> 3.0'
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
