@@ -211,7 +211,7 @@
 }
 
 #registry {
-  background-image:url('/assets/registry.png');
+  background-image:url('/assets/registry-info.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
   display: block;
@@ -308,10 +308,10 @@ a.down:hover, a.down:active, a.top:hover, a.top:active {
   background-repeat:no-repeat no-repeat;
   display:block;
   height:29px;
-  left:579px;
+  left:597px;
   position:absolute;
   text-indent:-9999em;
-  top:75px;
+  top:214px;
   width:172px;
 }
 #btn-honeyfund:hover {
