@@ -198,7 +198,7 @@
 
 
 #location {
-  background-image:url('/assets/venue-info.png');
+  background-image:url('/assets/venue-info2.png');
   background-position:initial initial;
   background-repeat:no-repeat no-repeat;
   display: block;
@@ -316,6 +316,17 @@ a.down:hover, a.down:active, a.top:hover, a.top:active {
 }
 #btn-honeyfund:hover {
   background-position:0 -31px;
+}
+#btn-livelink {
+  background-position:0 0;
+  background-repeat:no-repeat no-repeat;
+  display:block;
+  height:29px;
+  left:430px;
+  position:absolute;
+  text-indent:-9999em;
+  top:327px;
+  width:172px;
 }
 
 .comments-box{
